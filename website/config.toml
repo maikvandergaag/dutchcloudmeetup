@@ -22,19 +22,6 @@ paginate = 10
     url        = "/"
     weight     = 1
 
-
-[[menu.main]]
-    name       = "Sponsors"
-    identifier = "menu.sponsors"
-    url        = "/sponsors/"
-    weight     = 2
-
-[[menu.main]]
-    name       = "Team"
-    identifier = "menu.team"
-    url        = "/team/"
-    weight     = 3
-
 [[menu.main]]
     name       = "Events"
     identifier = "menu.events"
