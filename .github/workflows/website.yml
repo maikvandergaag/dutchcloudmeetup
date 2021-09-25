@@ -21,4 +21,7 @@ jobs:
           extended: true
 
       - name: Build
-        run: ls
+        run: |
+          cd website
+          ls
+          hugo
