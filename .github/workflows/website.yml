@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Website CI/CD
 on:
   push:
     branches: main
@@ -21,4 +21,4 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --minif
+        run: hugo build
