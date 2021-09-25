@@ -9,7 +9,7 @@ on:
 
 env:
   archName: Website
-  archfolder: './webiste/public'
+  archFolder: './webiste/public/'
 
 jobs:
   build:
