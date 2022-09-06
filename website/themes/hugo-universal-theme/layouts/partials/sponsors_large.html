@@ -1,0 +1,60 @@
+<div class="container" id="sponsors">
+
+    <div class="row">
+        <div class="col-md-12">
+
+            <section>
+
+                <div class="sponsors-content">
+                    {{ .Content }}
+                </div>
+                
+
+
+    {{ if isset .Site.Params "sponsors" }}
+    {{ if .Site.Params.sponsors.enable }}
+    {{ if gt (len .Site.Data.sponsors) 0 }}
+    <div class="container">
+
+
+            {{ range .Site.Data.sponsors }}
+        <div class="row" id="sponsors-row">
+            <div class="col-md-3 col-sm-6">
+                <div class="">
+                    <img class="sponsors-name-picture" alt="{{ .name }}" src="{{ .image | absURL}}">
+                </div>
+            </div>
+            <div class="col-md-8 col-sm-6">
+                    <h5>{{ .name }}</h5>
+                    <p>{{ .description | markdownify }}</p>
+
+                    {{ if .url }}
+                    <a href="{{ .url }}" target="_blank" style="opacity: 1;"><i class='fab fa-2x fa-edge'></i></a>
+                    {{end}}
+
+                    {{ if .linkedin }}
+                    <a href="{{ .linkedin }}" target="_blank" style="opacity: 1;"><i class='fab fa-2x fa-linkedin'></i></a>
+                    {{end}}
+
+                    {{ if .twitter }}
+                    <a href="{{ .twitter }}" target="_blank" style="opacity: 1;"><i class='fab fa-2x fa-twitter'></i></a>
+                    {{end}}
+
+            </div>
+        </div>
+            {{ end }}
+
+    </div>
+
+    <!-- /.bar -->
+    {{ end }}
+    {{ end }}
+    {{ end }}
+
+    </section>  
+    </div>  
+    </div>
+    <!-- /.row -->
+</div>
+
+{{ partial "map.html" . }}

@@ -20,5 +20,22 @@
 }
 
 .bar.background-image-fixed-2{
-    background:url(../img/dutchcloudmeetupgrid.jpg);
+    background:url(../img/dutchcloudmeetupgrid.jpg) important;
+}
+
+.app_message_error{
+    color:#FF9494;
+}
+
+.team-name-picture{
+    max-width:150px;
+    border-radius: 50%;
+}
+
+.sponsors-name-picture{
+    max-width: 200px;
+}
+
+#team-row, #sponsors-row{
+    padding-bottom:25px;
 }

@@ -3,18 +3,11 @@ title = "Dutch Cloud Meetup"
 theme = "hugo-universal-theme"
 languageCode = "en-us"
 defaultContentLanguage = "en"
-# Enable Google Analytics by entering your tracking code
-googleAnalytics = ""
-
-# number of words of summarized post content (default 70)
+googleAnalytics = "G-6WYFV491HQ"
 summaryLength = 70
-
-# Define the number of posts per page
 paginate = 10
 
 [menu]
-
-
 # Main menu
 [[menu.main]]
     name       = "Home"
@@ -29,17 +22,29 @@ paginate = 10
     weight     = 5
 
 [[menu.main]]
+    identifier = "menu.sponsors"
+    name       = "Sponsors"
+    url        = "/sponsors/"
+    weight     = 6
+
+
+[[menu.main]]
     identifier = "menu.code"
     name       = "Code of Conduct"
     url        = "/codeofconduct/"
     weight     = 7
 
 [[menu.main]]
+    identifier = "team"
+    name       = "Team"
+    url        = "/team/"
+    weight     = 8
+
+[[menu.main]]
     identifier = "contact"
     name       = "Contact"
     url        = "/contact/"
-    weight     = 7
-
+    weight     = 9
 
 # Top bar social links menu
 [[menu.topbar]]
@@ -48,25 +53,18 @@ paginate = 10
     url = "https://www.linkedin.com/company/dutch-cloud-meetup/"
     pre = "<i class='fab fa-2x fa-linkedin'></i>"
 
-
 [[menu.topbar]]
     weight = 4
     name = "Twitter"
     url = "http://twitter.com/dutchcloudmeetup"
     pre = "<i class='fab fa-2x fa-twitter'></i>"
 
-[[menu.topbar]]
-    weight = 5
-    name = "Email"
-    url = "mailto:info@dutchcloudmeetup.online"
-    pre = "<i class='fas fa-2x fa-envelope'></i>"
-
 [params]
     viewMorePostLink = "/events/"
     author = "Dutch Cloud Meetup"
     defaultKeywords = ["dutch cloud meetup", "cloud", "Azure"]
     mainSections = ["events"]
-    defaultDescription = "Dutch Cloud Meetup - De Cloud Meetup groep van Nederland"
+    defaultDescription = "Dutch Cloud Meetup - De Cloud Meetup group of the Netherlands"
 
     # Social media
     twitter_site = "dutchcloudmeetup"
@@ -78,22 +76,11 @@ paginate = 10
     # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
     style = "blue"
 
-    # Since this template is static, the contact form uses www.formspree.io as a
-    # proxy. The form makes a POST request to their servers to send the actual
-    # email. Visitors can send up to a 50 emails each month for free.
-    #
-    # What you need to do for the setup?
-    #
-    # - register your account to https://formspree.io/register
-    # - login and create new form
-    # - set your form's endpoint url under 'formspree_action' below
-    # - upload the generated site to your server
-    # - test a dummy email yourself
-    # - you're done. Happy mailing!
-    #
-    # Enable the contact form by entering your Formspree.io endpoint url
-    formspree_action = "https://formspree.io/f/xnqlwydy"
-    contact_form_ajax = false
+    contact_form_ajax = true
+
+    #forms
+    subscribe_action = "https://prod-213.westeurope.logic.azure.com:443/workflows/5ddb24fd6e264a43b4f4c8ad40a38bc6/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=JBaXgNQQ282jIUkDMb7rdxfcijdWi6rAhdH3oCGpHEw"
+    contact_action = "https://prod-222.westeurope.logic.azure.com:443/workflows/4e35983811e24776a28915ed460c36d8/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=VLpCMWNgdyMPlsavm2rrs1OE130rc1z2muKDqy-UZmY"
 
     # Formspree form supports Google reCAPTCHA Key (type v2).
     # If you use this feature, you should enable reCAPTCHA feature in the Formspree dashboard.
@@ -110,10 +97,10 @@ paginate = 10
     #   6. enter site key into `googleRecaptchaKey` to enable a recaptcha widget in your page.
     #
     enableRecaptchaInContactForm = false
-    googleRecaptchaKey = "site_key_for_google_recaptcha"
+    googleRecaptchaKey = "6LfaxtohAAAAAELRkS4CT4Dm0SPlc6Ttr4e48xIJ"
 
     about_us = "<p>The Dutch Cloud Meetup is a user group that focuses on Cloud Technologies. The group was founded in 2018 by an IT enthusiast who found the number of user group meetings in the Rotterdam area (South Holland) was too low.</p>"
-    copyright = "Copyright (c) 2021, Dutch Cloud Meetup; all rights reserved."
+    copyright = "Copyright (c) 2022, Dutch Cloud Meetup; all rights reserved."
 
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
@@ -165,6 +152,11 @@ paginate = 10
     title = "Team"
     subtitle = ""
 
+[params.team]
+    enable = true
+    title = "Team"
+    subtitle = ""
+
 [params.see_more]
     enable = true
     icon = "far fa-bell"
@@ -174,6 +166,11 @@ paginate = 10
     link_text = "Register Now"
 
 [params.clients]
+    enable = true
+    title = "Sponsors"
+    subtitle = ""
+
+[params.sponsors]
     enable = true
     title = "Sponsors"
     subtitle = ""

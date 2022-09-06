@@ -27,20 +27,26 @@ $(function () {
 function contactFormAjax () {
   var form = $('.contact-form-ajax')
   if (typeof form === 'undefined') return false
-  form.submit(function () {
-    $this = $(this)
-    $.post($(this).attr('action'),
-      $this.serialize(),
-      function () {
-        $this[0].reset() // clear form
+  form.submit(ajaxSubmit)
+}
 
-        $('#contact-message')
-          .html('<div class="alert alert-success" role="alert"><button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>Thank you for getting in touch. We will get back to you soon!</div>')
-          .fadeIn()
+function ajaxSubmit() {
+  var $form = jQuery(this);// cache form as jQuery object
+  var formdata = $form.serialize();
+  var action = $form.attr('action');
+  $.ajax({
+      type: "POST",
+      url: action,
+      data: formdata,
+      success: function(data) {
+          // replace form parent html
+          $form.html(data);         
+      },
+      error: function () {
+        alert('error');
       }
-      , 'json')
-    return false
   })
+  return false;
 }
 
 /* for demo purpose only - can be deleted */
