@@ -1,1 +1,0 @@
-Theme is based on the default hugo-universal-theme and adjusted for the Dutch Cloud Meetup

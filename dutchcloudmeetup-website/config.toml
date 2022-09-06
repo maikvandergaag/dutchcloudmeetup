@@ -1,0 +1,193 @@
+baseurl = "https://dutchcloudmeetup.online"
+title = "Dutch Cloud Meetup"
+theme = "hugo-universal-theme"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+# Enable Google Analytics by entering your tracking code
+googleAnalytics = ""
+
+# number of words of summarized post content (default 70)
+summaryLength = 70
+
+# Define the number of posts per page
+paginate = 10
+
+[menu]
+
+
+# Main menu
+[[menu.main]]
+    name       = "Home"
+    identifier = "menu.home"
+    url        = "/"
+    weight     = 1
+
+[[menu.main]]
+    name       = "Events"
+    identifier = "menu.events"
+    url        = "/events/"
+    weight     = 5
+
+[[menu.main]]
+    identifier = "menu.code"
+    name       = "Code of Conduct"
+    url        = "/codeofconduct/"
+    weight     = 7
+
+[[menu.main]]
+    identifier = "contact"
+    name       = "Contact"
+    url        = "/contact/"
+    weight     = 7
+
+
+# Top bar social links menu
+[[menu.topbar]]
+    weight = 3
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/company/dutch-cloud-meetup/"
+    pre = "<i class='fab fa-2x fa-linkedin'></i>"
+
+
+[[menu.topbar]]
+    weight = 4
+    name = "Twitter"
+    url = "http://twitter.com/dutchcloudmeetup"
+    pre = "<i class='fab fa-2x fa-twitter'></i>"
+
+[[menu.topbar]]
+    weight = 5
+    name = "Email"
+    url = "mailto:info@dutchcloudmeetup.online"
+    pre = "<i class='fas fa-2x fa-envelope'></i>"
+
+[params]
+    viewMorePostLink = "/events/"
+    author = "Dutch Cloud Meetup"
+    defaultKeywords = ["dutch cloud meetup", "cloud", "Azure"]
+    mainSections = ["events"]
+    defaultDescription = "Dutch Cloud Meetup - De Cloud Meetup groep van Nederland"
+
+    # Social media
+    twitter_site = "dutchcloudmeetup"
+    default_sharing_image = "img/sharing-default.png"
+
+    # Google Maps widget: If `googleMapsApiKey` is not set, no key will be passed to Google (which likely results in a broken map widget).
+    enableGoogleMaps = false
+
+    # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
+    style = "blue"
+
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 50 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - register your account to https://formspree.io/register
+    # - login and create new form
+    # - set your form's endpoint url under 'formspree_action' below
+    # - upload the generated site to your server
+    # - test a dummy email yourself
+    # - you're done. Happy mailing!
+    #
+    # Enable the contact form by entering your Formspree.io endpoint url
+    formspree_action = "https://formspree.io/f/xnqlwydy"
+    contact_form_ajax = false
+
+    # Formspree form supports Google reCAPTCHA Key (type v2).
+    # If you use this feature, you should enable reCAPTCHA feature in the Formspree dashboard.
+    #
+    # By default, Formspree use a redirect page for recaptcha widget.
+    # If you use a recaptcha widget in your contact page, you should do next steps.
+    # (if you don't want, skip these steps)
+    #
+    #   1. register your site on Google recaptcha admin page: https://www.google.com/recaptcha/admin
+    #   2. select reCAPTCHA v2 and checkbox widget type.
+    #   3. remember site key and secret key.
+    #   4. enter secret key into "Custom reCAPTCHA Key" field in your Formspree form setting page.
+    #   5. change `enableRecaptchaInContactForm` is to true
+    #   6. enter site key into `googleRecaptchaKey` to enable a recaptcha widget in your page.
+    #
+    enableRecaptchaInContactForm = false
+    googleRecaptchaKey = "site_key_for_google_recaptcha"
+
+    about_us = "<p>The Dutch Cloud Meetup is a user group that focuses on Cloud Technologies. The group was founded in 2018 by an IT enthusiast who found the number of user group meetings in the Rotterdam area (South Holland) was too low.</p>"
+    copyright = "Copyright (c) 2021, Dutch Cloud Meetup; all rights reserved."
+
+    # Format dates with Go's time formatting
+    date_format = "January 2, 2006"
+
+    disabled_logo = false
+    logo_text = "Dutch Cloud Meetup"
+
+    logo = "img/meetup/logo-small.png"
+    logo_small = "img/meetup/logo-small.png"
+    contact_url = "/contact"
+  
+
+[permalinks]
+    events = "/events/:year/:month/:day/:filename/"
+
+# Enable or disable top bar with social icons
+[params.topbar]
+    enable = true
+
+# Enable and disable widgets for the right sidebar
+[params.widgets]
+    tags = true
+    search = true
+
+[params.carouselCustomers]
+    items = 4
+    auto_play = false
+    slide_speed = 2000
+    pagination_speed = 1000
+
+[params.carouselTestimonals]
+    items = 3
+    auto_play = false
+    slide_speed = 2000
+    pagination_speed = 1000
+
+[params.carouselHomepage]
+    # All carousel items are defined in their own files. You can find example items
+    # at 'exampleSite/data/carousel'.
+    # For more informtion take a look at the README.
+    enable = true
+    auto_play = true
+    slide_speed = 2000
+    pagination_speed = 1000
+
+
+[params.testimonials]
+    enable = true
+    title = "Team"
+    subtitle = ""
+
+[params.see_more]
+    enable = true
+    icon = "far fa-bell"
+    title = "Our Next Event"
+    subtitle = "2nd Session 2021-2022"
+    link_url = "events/2021/09/21/2ndsession20212022/"
+    link_text = "Register Now"
+
+[params.clients]
+    enable = true
+    title = "Sponsors"
+    subtitle = ""
+
+[params.recent_posts]
+    enable = false
+    title = "From our blog"
+    subtitle = "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo."
+    hide_summary = false
+
+[params.footer.recent_posts]
+    enable = true
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  author = "authors"

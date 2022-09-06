@@ -9,7 +9,7 @@ on:
 
 env:
   archName: Website
-  archFolder: './website/public/'
+  archFolder: './dutchcloudmeetup-website/public/'
 
 jobs:
   build:
@@ -26,7 +26,7 @@ jobs:
 
       - name: Build
         run: |
-          cd website
+          cd dutchcloudmeetup-website
           hugo
       - name: Archive production website
         uses: actions/upload-artifact@v2
