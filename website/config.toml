@@ -27,24 +27,29 @@ paginate = 10
     url        = "/sponsors/"
     weight     = 6
 
+[[menu.main]]
+    identifier = "menu.speakers"
+    name       = "Speakers"
+    url        = "/speakers/"
+    weight     = 7
 
 [[menu.main]]
     identifier = "menu.code"
     name       = "Code of Conduct"
     url        = "/codeofconduct/"
-    weight     = 7
+    weight     = 8
 
 [[menu.main]]
     identifier = "team"
     name       = "Team"
     url        = "/team/"
-    weight     = 8
+    weight     = 9
 
 [[menu.main]]
     identifier = "contact"
     name       = "Contact"
     url        = "/contact/"
-    weight     = 9
+    weight     = 10
 
 # Top bar social links menu
 [[menu.topbar]]
@@ -58,6 +63,12 @@ paginate = 10
     name = "Twitter"
     url = "http://twitter.com/dutchcloudmeetup"
     pre = "<i class='fab fa-2x fa-twitter'></i>"
+
+[[menu.topbar]]
+    weight = 5
+    name = "YouTube"
+    url = "https://www.youtube.com/channel/UC5rlNwGCsECDGQrHgrxG3Pg"
+    pre = "<i class='fab fa-2x fa-youtube'></i>"
 
 [params]
     viewMorePostLink = "/events/"
@@ -114,7 +125,7 @@ paginate = 10
   
 
 [permalinks]
-    events = "/events/:year/:month/:day/:filename/"
+    events = "/events/:year/:month/:day/"
 
 # Enable or disable top bar with social icons
 [params.topbar]
@@ -161,9 +172,9 @@ paginate = 10
     enable = true
     icon = "far fa-bell"
     title = "Our Next Event"
-    subtitle = "2nd Session 2021-2022"
-    link_url = "events/2021/09/21/2ndsession20212022/"
-    link_text = "Register Now"
+    subtitle = "November 8th - A Evening on Cloud Security"
+    link_url = "events/2022/11/08/"
+    link_text = "Information / Register"
 
 [params.clients]
     enable = true

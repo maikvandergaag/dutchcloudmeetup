@@ -38,6 +38,8 @@
                     </div>
                     <div class="name same-height-always">
                         <h5><a href="{{ .Permalink }}">{{ .Title }}</a></h5>
+                        {{ $createdAt := .Date.Format .Site.Params.date_format }}
+                        {{ $createdAt }}
                     </div>
                 </div>
                 {{ end }}

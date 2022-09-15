@@ -13,7 +13,6 @@
             </p>
 
             <!-- *** BLOG HOMEPAGE *** -->
-
             <div class="row">
                 {{ $posts := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
                 {{ range first 4 $posts.Pages }}

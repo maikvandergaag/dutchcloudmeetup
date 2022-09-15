@@ -39,3 +39,35 @@
 #team-row, #sponsors-row{
     padding-bottom:25px;
 }
+
+.post-image{
+    max-height:400px;
+}
+
+.image-container{
+    padding-bottom:25px;
+}
+
+#blog-listing-medium .post h2, #blog-listing-medium .post .author-category, #heading-breadcrumbs h1{
+    text-transform: none;
+}
+
+.text-uppercase, .panel.sidebar-menu .panel-heading, #footer .blog-entries .item .name h5, .testimonials .item .testimonial .name-picture h5{
+    text-transform: none;
+}
+
+.panel.sidebar-menu ul.tag-cloud li a, .heading h1, .heading h2, .heading h3, .heading h4, .heading h5 {
+    text-transform: none;
+}
+
+.home-carousel .dark-mask, #top{
+    background-color: rgba(0,0,0,0.5) !important;
+}
+
+.navbar ul.nav > li > a{
+    text-transform: none;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+    background-color: #009FE3 !important;
+}

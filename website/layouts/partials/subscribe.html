@@ -1,5 +1,6 @@
 <div class="container-subscribe" id="subscribe">
     <h4>Subscribe</h4>
+    <p>Subscribe here to receive information about the Dutch Cloud Meetup.</p>
     <form {{ with .Site.Params.contact_form_ajax }}class="contact-form-ajax" {{ else }}{{ end }} method="post"
         action="{{ .Site.Params.subscribe_action }}">
         <div class="row">

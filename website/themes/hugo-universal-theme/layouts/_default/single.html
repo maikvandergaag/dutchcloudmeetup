@@ -1,90 +1,109 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
 
-  <head>
-    {{ partial "headers.html" . }}
-    {{ partial "custom_headers.html" . }}
-  </head>
+<head>
+  {{ partial "headers.html" . }}
+  {{ partial "custom_headers.html" . }}
+</head>
 
-  <body>
+<body>
 
-    <div id="all">
+  <div id="all">
 
-        {{ partial "top.html" . }}
+    {{ partial "top.html" . }}
 
-        {{ partial "nav.html" . }}
+    {{ partial "nav.html" . }}
 
-        {{ partial "breadcrumbs.html" . }}
+    {{ partial "breadcrumbs.html" . }}
 
-        <div id="content">
-            <div class="container">
+    <div id="content">
+      <div class="container">
 
-                <div class="row">
+        <div class="row">
 
-                    <!-- *** LEFT COLUMN *** -->
+          <!-- *** LEFT COLUMN *** -->
 
-                    <div class="col-md-9" id="blog-post">
+          <div class="col-md-9" id="blog-post">
 
-                        {{ if or .Params.author .Params.date }}
-                          <p class="text-muted text-uppercase mb-small text-right">
-                            {{ if isset .Params "authors" }}
-			      {{ i18n "authorBy" }} {{ range $index, $author := .Params.authors }}{{ if $index }}, {{ end }}<a href="{{ (printf "%s/%s" ("authors" | relLangURL) ($author | urlize)) }}">{{ $author }}</a>{{ end }}
-                            {{ end }}
-                            {{ if and .Params.author .Params.date }} | {{ end }}
-                            {{ if .Params.date }}
-                              {{ $createdAt := .Date.Format .Site.Params.date_format }}
-                              {{ range $index, $month := slice "January" "February" "March" "April" "May" "June" "July" "August" "September" "October" "November" "December" }}
-                                  {{ $createdAt = replace $createdAt $month (i18n $month) }}
-                              {{ end }}
-                              {{ $createdAt }}
-                            {{ end }}
-                          </p>
-                        {{ end }}
+            {{ if or .Params.author .Params.date }}
+            <p class="text-muted text-uppercase mb-small text-right">
+              {{ if isset .Params "authors" }}
+              {{ i18n "authorBy" }} {{ range $index, $author := .Params.authors }}{{ if $index }}, {{ end }}<a
+                href="{{ (printf " %s/%s" ("authors" | relLangURL) ($author | urlize)) }}">{{ $author }}</a>{{ end }}
+              {{ end }}
+              {{ if and .Params.author .Params.date }} | {{ end }}
+              {{ if .Params.date }}
+              {{ $createdAt := .Date.Format .Site.Params.date_format }}
+              {{ range $index, $month := slice "January" "February" "March" "April" "May" "June" "July" "August"
+              "September" "October" "November" "December" }}
+              {{ $createdAt = replace $createdAt $month (i18n $month) }}
+              {{ end }}
+              {{ $createdAt }}
+              {{ end }}
+            </p>
+            {{ end }}
 
-                        <div id="post-content">
-                          {{ .Content }}
-                        </div>
-                        <!-- /#post-content -->
-                        {{ if .Site.DisqusShortname }}
-                        <div id="comments">
-                            {{ template "_internal/disqus.html" . }}
-                        </div>
-                        {{ end }}
+            <div id="post-content">
+              <div class="image-container">
+              {{ if .Params.youtube}}
+              
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ .Params.youtube }}"
+                  allowfullscreen>
+                </iframe>
+              </div>
+              {{ else if  .Params.img }}
 
-                    </div>
-                    <!-- /#blog-post -->
+              
+                <img src="{{ .Params.img | relURL }}" class="post-image" alt="">
+                
 
-                    <!-- *** LEFT COLUMN END *** -->
-
-                    <!-- *** RIGHT COLUMN *** -->
-
-                    <div class="col-md-3">
-
-                        <!-- *** MENUS AND WIDGETS *** -->
-
-                        {{ partial "sidebar.html" . }}
-
-                        <!-- *** MENUS AND FILTERS END *** -->
-
-                    </div>
-                    <!-- /.col-md-3 -->
-
-                    <!-- *** RIGHT COLUMN END *** -->
-
-                </div>
-                <!-- /.row -->
-
+              {{end}}
             </div>
-            <!-- /.container -->
+              {{ .Content }}
+            </div>
+            <!-- /#post-content -->
+            {{ if .Site.DisqusShortname }}
+            <div id="comments">
+              {{ template "_internal/disqus.html" . }}
+            </div>
+            {{ end }}
+
+          </div>
+          <!-- /#blog-post -->
+
+          <!-- *** LEFT COLUMN END *** -->
+
+          <!-- *** RIGHT COLUMN *** -->
+
+          <div class="col-md-3">
+
+            <!-- *** MENUS AND WIDGETS *** -->
+
+            {{ partial "sidebar.html" . }}
+
+            <!-- *** MENUS AND FILTERS END *** -->
+
+          </div>
+          <!-- /.col-md-3 -->
+
+          <!-- *** RIGHT COLUMN END *** -->
+
         </div>
-        <!-- /#content -->
+        <!-- /.row -->
 
-        {{ partial "footer.html" . }}
-
+      </div>
+      <!-- /.container -->
     </div>
-    <!-- /#all -->
+    <!-- /#content -->
 
-    {{ partial "scripts.html" . }}
+    {{ partial "footer.html" . }}
 
-  </body>
+  </div>
+  <!-- /#all -->
+
+  {{ partial "scripts.html" . }}
+
+</body>
+
 </html>
