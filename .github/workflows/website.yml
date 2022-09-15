@@ -27,7 +27,7 @@ jobs:
       - name: Build
         run: |
           cd website
-          hugo
+          hugo --buildFuture
       - name: Archive production website
         uses: actions/upload-artifact@v2
         with:
