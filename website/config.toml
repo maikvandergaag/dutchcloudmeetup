@@ -119,8 +119,8 @@ paginate = 10
     disabled_logo = false
     logo_text = "Dutch Cloud Meetup"
 
-    logo = "img/meetup/logo-small.png"
-    logo_small = "img/meetup/logo-small.png"
+    logo = "img/logo-small.png"
+    logo_small = "img/logo-small.png"
     contact_url = "/contact"
   
 
