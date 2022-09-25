@@ -1,4 +1,4 @@
-baseurl = "https://dutchcloudmeetup.online"
+baseurl = "https://www.dutchcloudmeetup.online"
 title = "Dutch Cloud Meetup"
 theme = "hugo-universal-theme"
 languageCode = "en-us"
@@ -6,6 +6,7 @@ defaultContentLanguage = "en"
 googleAnalytics = "G-6WYFV491HQ"
 summaryLength = 70
 paginate = 10
+buildFuture = true
 
 [menu]
 # Main menu
