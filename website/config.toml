@@ -1,4 +1,4 @@
-baseurl = "https://www.dutchcloudmeetup.online"
+baseurl = "https://dutchcloudmeetup.online"
 title = "Dutch Cloud Meetup"
 theme = "hugo-universal-theme"
 languageCode = "en-us"
