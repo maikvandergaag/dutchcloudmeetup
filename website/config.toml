@@ -30,8 +30,8 @@ buildFuture = true
 
 [[menu.main]]
     identifier = "menu.speakers"
-    name       = "Speakers"
-    url        = "/speakers/"
+    name       = "CFP"
+    url        = "/CFP/"
     weight     = 7
 
 [[menu.main]]
@@ -76,7 +76,7 @@ buildFuture = true
     author = "Dutch Cloud Meetup"
     defaultKeywords = ["dutch cloud meetup", "cloud", "Azure"]
     mainSections = ["events"]
-    defaultDescription = "Dutch Cloud Meetup - De Cloud Meetup group of the Netherlands"
+    defaultDescription = "Dutch Cloud Meetup - The Cloud Meetup group of the Netherlands"
 
     # Social media
     twitter_site = "dutchcloudmeetup"

@@ -1,5 +1,5 @@
 +++
-title = "Speakers"
+title = "CFP"
 +++
 
 As a meetup group we are always looking for speakers for our events. We have two type of events:
