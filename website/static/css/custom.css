@@ -71,3 +71,54 @@
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
     background-color: #009FE3 !important;
 }
+
+.btn-template-transparent-black-post {
+    color: #ffffff;
+    background-color: #d1410c;
+    border-color: #ffffff;
+  }
+  .btn-template-transparent-black-post:hover,
+  .btn-template-transparent-black-post:focus,
+  .btn-template-transparent-black-post:active,
+  .btn-template-transparent-black-post.active,
+  .open > .dropdown-toggle.btn-template-transparent-black {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: #e0e0e0;
+  }
+  .btn-template-transparent-black-post:active,
+  .btn-template-transparent-black-post.active,
+  .open > .dropdown-toggle.btn-template-transparent-black {
+    background-image: none;
+  }
+  .btn-template-transparent-black-post.disabled,
+  .btn-template-transparent-black-post[disabled],
+  fieldset[disabled] .btn-template-transparent-black-post,
+  .btn-template-transparent-black-post.disabled:hover,
+  .btn-template-transparent-black-post[disabled]:hover,
+  fieldset[disabled] .btn-template-transparent-black-post:hover,
+  .btn-template-transparent-black-post.disabled:focus,
+  .btn-template-transparent-black-post[disabled]:focus,
+  fieldset[disabled] .btn-template-transparent-black-post:focus,
+  .btn-template-transparent-black-post.disabled:active,
+  .btn-template-transparent-black-post[disabled]:active,
+  fieldset[disabled] .btn-template-transparent-black-post:active,
+  .btn-template-transparent-black-post.disabled.active,
+  .btn-template-transparent-black-post[disabled].active,
+  fieldset[disabled] .btn-template-transparent-black-post.active {
+    background-color: #009FE3;
+    border-color: #ffffff;
+  }
+  .btn-template-transparent-black-post .badge {
+    color: transparent;
+    background-color:#009FE3;
+  }
+  .btn-template-transparent-black-post:hover,
+  .btn-template-transparent-black-post:focus,
+  .btn-template-transparent-black-post:active,
+  .btn-template-transparent-black-post.active {
+    background:#009FE3;
+    color: #fff;
+    border-color: #d1410c;
+  }
+  

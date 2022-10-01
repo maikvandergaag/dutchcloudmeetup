@@ -138,8 +138,8 @@ buildFuture = true
     search = true
 
 [params.carouselCustomers]
-    items = 4
-    auto_play = false
+    items = 3
+    auto_play = true
     slide_speed = 2000
     pagination_speed = 1000
 
@@ -150,9 +150,6 @@ buildFuture = true
     pagination_speed = 1000
 
 [params.carouselHomepage]
-    # All carousel items are defined in their own files. You can find example items
-    # at 'exampleSite/data/carousel'.
-    # For more informtion take a look at the README.
     enable = true
     auto_play = true
     slide_speed = 2000
@@ -173,8 +170,8 @@ buildFuture = true
     enable = true
     icon = "far fa-bell"
     title = "Our Next Event"
-    subtitle = "November 8th - A Evening on Cloud Security"
-    link_url = "events/2022/11/08/"
+    subtitle = "November 10th - A Evening on Cloud Security"
+    link_url = "events/2022/11/10/"
     link_text = "Information / Register"
 
 [params.clients]

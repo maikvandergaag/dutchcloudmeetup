@@ -60,7 +60,29 @@
 
               {{end}}
             </div>
+            <div>
+              {{ if lt now .Params.date }}
+              {{ if .Params.eventbrite}}
+              <p class="text-center">
+                <a href="{{ .Params.eventbrite }}" class="btn btn-template-transparent-black-post btn-lg">
+                Register
+                </a>
+            </p>
+              {{ end }}
+              {{ end }}
+            </div>
               {{ .Content }}
+            </div>
+            <div>
+              {{ if lt now .Params.date }}
+              {{ if .Params.eventbrite}}
+              <p class="text-center">
+                <a href="{{ .Params.eventbrite }}" class="btn btn-template-transparent-black-post btn-lg">
+                Register
+                </a>
+            </p>
+              {{ end }}
+              {{ end }}
             </div>
             <!-- /#post-content -->
             {{ if .Site.DisqusShortname }}
