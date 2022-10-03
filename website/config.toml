@@ -62,7 +62,7 @@ buildFuture = true
 [[menu.topbar]]
     weight = 4
     name = "Twitter"
-    url = "http://twitter.com/dutchcloudmeetup"
+    url = "http://twitter.com/dcloudmeetup"
     pre = "<i class='fab fa-2x fa-twitter'></i>"
 
 [[menu.topbar]]
