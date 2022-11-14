@@ -61,7 +61,7 @@
     text-transform: none;
 }
 
-.home-carousel .dark-mask, #top{
+.home-carousel .dark-mask{
     background: url('../img/site/header2.jpg');
 }
 
