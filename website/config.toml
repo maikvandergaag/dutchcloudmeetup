@@ -170,9 +170,9 @@ buildFuture = true
     enable = true
     icon = "far fa-bell"
     title = "Our Next Event"
-    subtitle = "November 10th - A Evening on Cloud Security"
-    link_url = "events/2022/11/10/"
-    link_text = "Information / Register"
+    subtitle = "Planning at this moment stay tuned"
+    link_url = ""
+    link_text = ""
 
 [params.clients]
     enable = true
