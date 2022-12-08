@@ -170,9 +170,9 @@ buildFuture = true
     enable = true
     icon = "far fa-bell"
     title = "Our Next Event"
-    subtitle = "Planning at this moment stay tuned"
-    link_url = ""
-    link_text = ""
+    subtitle = "16 December - Online - Administer Governance and Compliance!"
+    link_url = "/events/2022/12/16/"
+    link_text = "Watch live"
 
 [params.clients]
     enable = true
