@@ -170,8 +170,8 @@ buildFuture = true
     enable = true
     icon = "far fa-bell"
     title = "Our Next Event"
-    subtitle = "16 December - Online - Administer Governance and Compliance!"
-    link_url = "/events/2022/12/16/"
+    subtitle = "27 Januari - Online - Design for costs, four pillars of economic cloud design"
+    link_url = "/events/2023/01/27/"
     link_text = "Watch live"
 
 [params.clients]
