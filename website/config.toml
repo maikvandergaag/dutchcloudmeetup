@@ -169,10 +169,10 @@ buildFuture = true
 [params.see_more]
     enable = true
     icon = "far fa-bell"
-    title = "Our Next Event"
-    subtitle = "27 Januari - Online - Design for costs, four pillars of economic cloud design"
-    link_url = "/events/2023/01/27/"
-    link_text = "Watch live"
+    title = "Our Next Event - In-Person"
+    subtitle = "31 Januari - A evening on Infrastructure as Code"
+    link_url = "/events/2023/01/31/"
+    link_text = "Register Now"
 
 [params.clients]
     enable = true
