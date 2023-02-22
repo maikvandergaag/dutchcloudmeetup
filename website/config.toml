@@ -169,10 +169,10 @@ buildFuture = true
 [params.see_more]
     enable = true
     icon = "far fa-bell"
-    title = "Our Next Event - In-Person"
-    subtitle = "31 Januari - A evening on Infrastructure as Code"
-    link_url = "/events/2023/01/31/"
-    link_text = "Register Now"
+    title = "Our Next Event - Online"
+    subtitle = "17 March - I find your lack of Azure Governance disturbing!"
+    link_url = "/events/2023/03/17/"
+    link_text = "Check Now"
 
 [params.clients]
     enable = true
