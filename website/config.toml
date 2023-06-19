@@ -170,8 +170,8 @@ buildFuture = true
     enable = true
     icon = "far fa-bell"
     title = "Our Next Event - In - Person!"
-    subtitle = "6 June - An evening on Secret Management!"
-    link_url = "/events/2023/06/06/"
+    subtitle = "4 July - BBQ & Cloud Security!"
+    link_url = "/events/2023/07/04/"
     link_text = "Register Now"
 
 [params.clients]
